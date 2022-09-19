@@ -1,13 +1,19 @@
-import './App.css';
+
+import PageHeader from './components/PageHeader';
+
+import classes from './styles/App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
+      <PageHeader/>
+      <div className={classes.MainContainer}>
         <img 
-          src={`${process.env.PUBLIC_URL}/media/logo-small.png`}
+          src={`${process.env.PUBLIC_URL}/media/logo.png`}
           alt='Hydrolife Logo'/>
-      <p>Coming soon...</p>
-      <a href="tel:0217050306">021-705-0306</a>
+        <p>Coming soon...</p>
+        <a href="tel:0878203953" style={{ color: '#FFF' }}>087 820 3953</a>
+      </div>
     </div>
   );
 }

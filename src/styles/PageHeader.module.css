@@ -1,0 +1,29 @@
+.PageHeader {
+  background: #323741;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.LogoContainer {
+  padding: 20px 15px 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+.MenuContainer {
+  padding: 20px 15px 20px;
+  width: 45%;
+  display: inline-block;
+  text-align: right;
+}
+
+.LogoContainer > img {
+  width: 180px;
+  text-align: left;
+}
+
+.MenuContainer > img {
+  width: 30px;
+}

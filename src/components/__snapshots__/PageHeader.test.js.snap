@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page header renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="PageHeader"
+    >
+      <div
+        class="LogoContainer"
+      >
+        <img
+          alt="Hydrolife Logo"
+          src="/media/Logo.png"
+        />
+      </div>
+      <div
+        class="MenuContainer"
+      >
+        <img
+          alt="Menu"
+          src="/media/menu.png"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
