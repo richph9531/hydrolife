@@ -2,11 +2,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hydrogzv/public_html/
-    - /bin/cp -R /build/media $DEPLOYPATH
-    - /bin/cp -R /build/static $DEPLOYPATH
-    - /bin/cp /build/asset-manifest.json $DEPLOYPATH
-    - /bin/cp /build/favicon.ico $DEPLOYPATH
-    - /bin/cp /build/index.html $DEPLOYPATH
-    - /bin/cp /build/manifest.json $DEPLOYPATH
-    - /bin/cp /build/robots.txt $DEPLOYPATH
+       - export DEPLOYPATH=/home/hydrogzv/public-html/
+       - /bin/cp -R * $DEPLOYPATH
