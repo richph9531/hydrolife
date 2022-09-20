@@ -9,7 +9,7 @@ function App() {
       <PageHeader/>
       <div className={classes.MainContainer}>
         <img 
-          src={`${process.env.PUBLIC_URL}/media/logo.png`}
+          src={`${process.env.PUBLIC_URL}/media/logo2.png`}
           alt='Hydrolife Logo'/>
         <p>Coming soon</p>
         <a href="tel:0878203953" style={{ color: '#FFF' }}>087 820 3953</a>
