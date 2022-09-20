@@ -2,6 +2,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hydrogzv/public_html/
-    - cd build
-    cp -a ./. $DEPLOYPATH
+    cp -a /home/hydrogzv/repositories/hydrolife/build/. /home/hydrogzv/public_html/
