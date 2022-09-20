@@ -21,3 +21,15 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed from Github.
 
 See the section about [deployment](https://blog.logrocket.com/8-ways-deploy-react-app-free/#github-pages) for more information.
+
+
+git clone repo
+npm install
+npm start
+npm test
+make code changes
+npm run prebuild
+git commit changes
+git push changes
+cpanel git version control
+manage >> pull >> deploy

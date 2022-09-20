@@ -14,6 +14,14 @@ exports[`Page header renders correctly 1`] = `
           src="/media/logo.png"
         />
       </div>
+      <div
+        class="MenuContainer"
+      >
+        <img
+          alt="Menu"
+          src="/media/menu.png"
+        />
+      </div>
     </div>
   </div>
 </body>
