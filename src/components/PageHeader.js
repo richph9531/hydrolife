@@ -9,11 +9,11 @@ const PageHeader = () => (
         src={`${process.env.PUBLIC_URL}/media/logo.png`}
         alt='Hydrolife Logo'/>
       </div>
-    {/* <div className={classes.MenuContainer}>
+    <div className={classes.MenuContainer}>
       <img
         src={`${process.env.PUBLIC_URL}/media/menu.png`}
         alt='Menu'/>
-    </div> */}
+    </div>
   </div>
 );
 
