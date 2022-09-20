@@ -11,17 +11,12 @@ exports[`Page header renders correctly 1`] = `
       >
         <img
           alt="Hydrolife Logo"
-          src="/media/Logo.png"
+          src="/media/logo.png"
         />
       </div>
       <div
         class="MenuContainer"
-      >
-        <img
-          alt="Menu"
-          src="/media/menu.png"
-        />
-      </div>
+      />
     </div>
   </div>
 </body>
