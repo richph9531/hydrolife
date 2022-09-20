@@ -3,4 +3,12 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/hydrogzv/public_html/
-    - /bin/cp -a /home/hydrogzv/build/. $DEPLOYPATH
+    - /bin/cp -R media $DEPLOYPATH
+    - /bin/cp -R static $DEPLOYPATH
+    - /bin/cp asset-manifest.json $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp manifest.json $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+
+    
