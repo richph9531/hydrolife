@@ -3,4 +3,4 @@
 deployment:
   tasks:
        - export DEPLOYPATH=/home/hydrogzv/public_html/
-       - /bin/cp -R ./build/. $DEPLOYPATH
+       - /bin/cp -a ./build/. $DEPLOYPATH
