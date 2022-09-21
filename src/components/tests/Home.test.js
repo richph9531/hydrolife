@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { render } from '@testing-library/react';
-import PageHeader from './PageHeader';
+import Home from '../Home';
 
-test('Page header renders correctly', () => {
-  const view = render(<PageHeader />);
+test('Home renders correctly', () => {
+  const view = render(<Home />);
   expect(view.baseElement).toMatchSnapshot();
 });

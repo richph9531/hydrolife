@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cooler Rentals renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="CoolerRentals"
+    >
+      <h1>
+        Cooler Rentals
+      </h1>
+    </div>
+  </div>
+</body>
+`;

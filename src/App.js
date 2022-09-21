@@ -1,19 +1,20 @@
 
 import PageHeader from './components/PageHeader';
-
-import classes from './styles/App.module.css';
+import Home from './components/Home';
+import ProductsAndServices from './components/ProductsAndServices';
+import CoolerRentals from './components/CoolerRentals';
+import MeetTheTeam from './components/MeetTheTeam';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
     <div className='App'>
       <PageHeader/>
-      <div className={classes.MainContainer}>
-        <img 
-          src={`${process.env.PUBLIC_URL}/media/logo.png`}
-          alt='Hydrolife Logo'/>
-        <p>Coming soon...</p>
-        <a href="tel:0878203953" style={{ color: '#FFF' }}>087 820 3953</a>
-      </div>
+      <Home/>
+      <ProductsAndServices/>
+      <CoolerRentals/>
+      <MeetTheTeam/>
+      <ContactUs/>
     </div>
   );
 }

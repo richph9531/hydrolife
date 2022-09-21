@@ -1,0 +1,18 @@
+.Home {
+  padding: 15% 12%;
+  margin-top: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #393f4a;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: rgb(226, 224, 224);
+}
+
+.Home > img {
+  width: 80%;
+}
