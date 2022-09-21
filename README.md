@@ -1,35 +1,19 @@
-# Getting Started with Hydrolife
-### `npm install`
-Installs all the dependencies.
+# Working with [Hydrolife](https://hydrolife.co.za)
 
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation steps
+1. Clone the repo
+2. Run `npm install`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Run the app in the development mode
+1. Run `npm start`
+2. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm test`
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run tests
+1. Run `npm test` to launch the test runner in the interactive watch mode.
 
-### `npm run deploy`
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed from Github.
-
-See the section about [deployment](https://blog.logrocket.com/8-ways-deploy-react-app-free/#github-pages) for more information.
-
-
-git clone repo
-npm install
-npm start
-npm test
-make code changes
-npm run prebuild
-git commit changes
-git push changes
-cpanel git version control
-manage >> pull >> deploy
+### Getting code deployed
+1. Run `npm run prebuild` to test and build the code.
+2. Commit changes and push
+3. Login to Afrihost and navigate to `Git Version Control` >> `Manage` >> `Pull and Deploy`
+4. Pull latest code and deploy
+5. Verify
