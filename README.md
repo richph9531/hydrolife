@@ -14,6 +14,7 @@
 ### Getting code deployed
 1. Run `npm run prebuild` to test and build the code.
 2. Commit changes and push
-3. Login to Afrihost and navigate to `Git Version Control` >> `Manage` >> `Pull and Deploy`
-4. Pull latest code and deploy
+3. Login to Afrihost and navigate to `Git Version Control` >> `Manage` >> `Pull or Deploy`
+4. Click `Update from Remote`
+5. Click `Deploy HEAD commit`
 5. Verify

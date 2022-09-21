@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page DOM is correct 1`] = `
+<body>
+  <div>
+    <div
+      class="App"
+    >
+      <div
+        class="PageHeader"
+      >
+        <div
+          class="LogoContainer"
+        >
+          <img
+            alt="Hydrolife Logo"
+            src="/media/logo.png"
+          />
+        </div>
+      </div>
+      <div
+        class="MainContainer"
+      >
+        <img
+          alt="Hydrolife Logo"
+          src="/media/logo.png"
+        />
+        <p>
+          Coming soon...
+        </p>
+        <a
+          href="tel:0878203953"
+          style="color: rgb(255, 255, 255);"
+        >
+          087 820 3953
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,8 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders phone number link', () => {
-  render(<App />);
-  const element = screen.getByText(/087 820 3953/i);
-  expect(element).toBeInTheDocument();
+test('Page DOM is correct', () => {
+  const view = render(<App />);
+  expect(view.baseElement).toMatchSnapshot();
 });
