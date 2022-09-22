@@ -6,19 +6,29 @@ exports[`Home renders correctly 1`] = `
     <div
       class="Home"
     >
-      <img
-        alt="Hydrolife Logo"
-        src="/media/logo.png"
-      />
-      <p>
-        Coming soon...
-      </p>
-      <a
-        href="tel:0878203953"
-        style="color: rgb(255, 255, 255);"
+      <div
+        class="HomeContent"
       >
-        087 820 3953
-      </a>
+        <img
+          alt="Hydrolife Logo"
+          src="/media/logo.png"
+        />
+        <p>
+          We have over 20 years of experience in the rental of water coolers and the delivery of refill bottled water in the greater Cape Town area. Hydrolife has the solution to your home, office or factory/plant water needs.
+        </p>
+        <p>
+          Our expertise in off-grid solutions and bespoke water filtration systems is what sets Hydrolife apart from other excellent quality water solutions.
+        </p>
+      </div>
+      <div
+        class="HomeCoolerImageContainer"
+      >
+        <img
+          alt="Rent one of these"
+          class="HomeCoolerImage"
+          src="/media/cooler-tall.png"
+        />
+      </div>
     </div>
   </div>
 </body>

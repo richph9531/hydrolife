@@ -9,6 +9,12 @@ exports[`Contact Us renders correctly 1`] = `
       <h1>
         Contact Us
       </h1>
+      <a
+        href="tel:0878203953"
+        style="color: rgb(255, 255, 255);"
+      >
+        087 820 3953
+      </a>
     </div>
   </div>
 </body>

@@ -13,9 +13,10 @@
 
 ### Getting code deployed to test environment
 1. Open `package.json` and make sure the homepage is `https://richph9531.github.io/hydrolife/`
-2. Run `npm run deploy-test` to test and build the code.
-3. Navigate to [test site](https://richph9531.github.io/hydrolife/)
-4. Verify
+2. Run `npm run build` to build the code.
+3. Run `npm run deploy-test` to deploy the code.
+4. Navigate to [test site](https://richph9531.github.io/hydrolife/)
+5. Verify
 
 ### Getting code deployed to PRODUCTION
 1. Open `package.json` and make sure the homepage is `https://hydrolife.co.za/`

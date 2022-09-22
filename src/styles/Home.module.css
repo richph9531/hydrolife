@@ -10,7 +10,7 @@
 .HomeContent {
   padding: 0px 20px 2px 0px;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   background-color: #393f4a;
   font-size: calc(6px + 2vmin);
   color: rgb(226, 224, 224);
