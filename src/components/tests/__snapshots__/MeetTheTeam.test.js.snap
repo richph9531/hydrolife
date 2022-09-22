@@ -7,8 +7,226 @@ exports[`Meet the Team renders correctly 1`] = `
       class="MeetTheTeam"
     >
       <h1>
-        Meet the Team
+        Meet the team
       </h1>
+      <div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Heather
+             
+            Philips
+          </p>
+          <p>
+            Director
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/HeatherPhilips.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Mike
+             
+            Oosthuyzen
+          </p>
+          <p>
+            Director
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/MikeOosthuyzen.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Mac
+             
+            Oosthuyzen
+          </p>
+          <p>
+            Director
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/MacOosthuyzen.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Adien
+             
+            Oosthuyzen
+          </p>
+          <p>
+            Director
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/AdienOosthuyzen.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Rick
+             
+          </p>
+          <p>
+            Senior Manager
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Rick.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Yvonne
+             
+          </p>
+          <p>
+            Accounts
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Yvonne.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Matthew
+             
+          </p>
+          <p>
+            Technician
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Matthew.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Gary
+             
+          </p>
+          <p>
+            Technician
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Gary.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Logan
+             
+          </p>
+          <p>
+            Administration
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Logan.png"
+          />
+          <br />
+          <br />
+        </div>
+        <div
+          class="TeamMemberCard"
+        >
+          <p>
+            Keegan
+             
+          </p>
+          <p>
+            Work Husband
+          </p>
+          <p>
+            Add some content
+          </p>
+          <img
+            alt=""
+            class="TeamImages"
+            src="/media/team/Keegan.png"
+          />
+          <br />
+          <br />
+        </div>
+      </div>
+      <br />
+      <br />
     </div>
   </div>
 </body>
