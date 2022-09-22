@@ -15,6 +15,19 @@ exports[`Page header renders correctly 1`] = `
         />
       </div>
       <div
+        class="PhoneContainer"
+      >
+        <img
+          alt=""
+          src="/media/phone-call.svg"
+        />
+        <a
+          href="tel:0878203953"
+        >
+          087-820-3953
+        </a>
+      </div>
+      <div
         class="MenuContainer"
       >
         <img
