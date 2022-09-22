@@ -6,8 +6,5 @@
   align-items: center;
   background-color: #393f4a;
   min-height: 100%;
-  flex-direction: column;
-  justify-content: top;
-  font-size: calc(10px + 2vmin);
   color: rgb(226, 224, 224);
 }

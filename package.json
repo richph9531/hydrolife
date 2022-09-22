@@ -1,6 +1,6 @@
 {
   "name": "hydrolife",
-  "homepage": "https://hydrolife.co.za/",
+  "homepage": "https://richph9531.github.io/hydrolife/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "gh-pages": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +18,8 @@
     "test": "react-scripts test",
     "test-ci": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "predeploy": "npm run test-ci && npm run build"
+    "predeploy": "npm run test-ci && npm run build",
+    "deploy-test": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

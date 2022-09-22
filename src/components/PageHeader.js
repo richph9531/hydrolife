@@ -12,7 +12,8 @@ const PageHeader = () => (
     <div className={classes.MenuContainer}>
       <img
         src={`${process.env.PUBLIC_URL}/media/menu.png`}
-        alt='Menu'/>
+        alt='Menu'
+        onClick={() => {console.log('clicked')}}/>
     </div>
   </div>
 );

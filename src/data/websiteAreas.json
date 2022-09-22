@@ -1,0 +1,7 @@
+[
+    { "order": 1, "name": "Home" },
+    { "order": 2, "name": "Cooler Rentals" },
+    { "order": 3, "name": "Products and Services" },
+    { "order": 4, "name": "Meet the Team" },
+    { "order": 5, "name": "Contact Us" }
+]
