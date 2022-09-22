@@ -1,17 +1,31 @@
 .Home {
-  padding: 15% 12%;
-  margin-top: 32px;
+  padding: 10% 5%;
+  margin-top: 50px;
   box-sizing: border-box;
   width: 100%;
   display: flex;
-  align-items: center;
   background-color: #393f4a;
-  min-height: 100%;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: rgb(226, 224, 224);
 }
 
-.Home > img {
-  width: 80%;
+.HomeContent {
+  padding: 0px 20px 2px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #393f4a;
+  font-size: calc(6px + 2vmin);
+  color: rgb(226, 224, 224);
+  text-align: justify;
+  text-justify: inter-word;
 }
+.HomeContent > img {
+  width: 90%;
+}
+
+.HomeCoolerImage {
+  padding: 10% 5%;
+  width: 90%;
+  border-radius: 8px;
+  background: #fffefe;
+  margin-right: 12px;
+}
+

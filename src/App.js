@@ -7,7 +7,6 @@ import CoolerRentals from './components/CoolerRentals';
 import MeetTheTeam from './components/MeetTheTeam';
 import ContactUs from './components/ContactUs';
 
-import teamData from './data/meetTheTeam.json';
 
 class App extends Component {
   state = {};
@@ -19,7 +18,7 @@ class App extends Component {
         <Home/>
         <CoolerRentals/>
         <ProductsAndServices/>
-        <MeetTheTeam data={teamData}/>
+        <MeetTheTeam/>
         <ContactUs/>
       </div>
     );
