@@ -13,7 +13,7 @@
   width: 50%;
   background-color: #393f4a;
   font-size: calc(6px + 2vmin);
-  color: rgb(226, 224, 224);
+  color: #e2e0e0;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -25,7 +25,7 @@
   padding: 10% 5%;
   width: 90%;
   border-radius: 8px;
-  background: #fffefe;
+  background: #ffffff;
   margin-right: 12px;
 }
 

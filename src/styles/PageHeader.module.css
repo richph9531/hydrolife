@@ -1,6 +1,7 @@
 .PageHeader {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 12px;
   background: #323741;
   position: fixed;
@@ -10,19 +11,37 @@
 }
 
 .LogoContainer {
-  width: 50%;
+  width: 55%;
   display: inline-block;
 }
 
-.MenuContainer {
-  width: 45%;
+.PhoneContainer {
+  width: 30%;
   display: inline-block;
+  color: #1cb29f;
+
+}
+
+.PhoneContainer > img {
+  width: 12%;
+  max-height: 30px;
+  padding-right: 10px;
+}
+
+.PhoneContainer > a {
+  margin-bottom: 100px;
+  font-size: calc(4px + 2vmin);
+  color: #1cb29f;
   text-align: right;
+}
+
+
+.MenuContainer {
+  display: inline-block;
 }
 
 .LogoContainer > img {
   width: 180px;
-  text-align: left;
 }
 
 .MenuContainer > img {

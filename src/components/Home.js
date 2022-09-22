@@ -14,7 +14,7 @@ const Home = () => (
     <div className={classes.HomeCoolerImageContainer} >
       <img className={classes.HomeCoolerImage} 
         src={`${process.env.PUBLIC_URL}/media/cooler-tall.png`}
-         alt='Rent one of these'/>
+        alt='Rent one of these'/>
     </div>
   </div>
 
