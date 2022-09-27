@@ -1,5 +1,5 @@
 .Home {
-  padding: 10% 5%;
+  padding: 5% 5%;
   margin-top: 50px;
   box-sizing: border-box;
   width: 100%;
@@ -8,24 +8,25 @@
 }
 
 .HomeContent {
-  padding: 0px 20px 2px 0px;
   box-sizing: border-box;
-  width: 50%;
+  width: 42vw;
   background-color: #393f4a;
   font-size: calc(6px + 2vmin);
   color: #e2e0e0;
   text-align: justify;
   text-justify: inter-word;
 }
+
 .HomeContent > img {
-  width: 90%;
+  width: 100%;
 }
 
 .HomeCoolerImage {
-  padding: 10% 5%;
-  width: 90%;
-  border-radius: 8px;
-  background: #ffffff;
-  margin-right: 12px;
+  height: 80vh;
 }
 
+@media (max-width: 500px) {
+  .HomeCoolerImage {
+    height: 50vh;
+  }
+}

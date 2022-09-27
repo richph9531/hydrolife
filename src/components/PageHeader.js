@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContactIcons from './ContactIcons';
+import ContactIconsForHeader from './ContactIconsForHeader';
 
 import classes from '../styles/PageHeader.module.css';
 
@@ -12,7 +12,7 @@ const PageHeader = (props) => (
         alt='Hydrolife Logo'/>
     </div>
     <div className={classes.ContactUsContainer}>
-      <ContactIcons data={props}/>
+      <ContactIconsForHeader data={props}/>
     </div>
   </div>
 );

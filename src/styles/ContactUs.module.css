@@ -1,9 +1,41 @@
 .ContactUs {
-  padding: 15% 12%;
-  box-sizing: border-box;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  background-color: #393f4a;
-  min-height: 100%;
-  color: #ffffff;
+  align-items: left;
+  background-color: #444b58;
+  color: #1d76bb;
+  font-size: calc(25px + 2vmin);
+}
+
+.IconsContainer {
+  width: 60vw;
+  display: inline-block;
+  color: #1cb29f;
+}
+
+.Icons {
+  width: 80px;
+  margin-top: 20px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+.PhoneContainer {
+  color: #1cb29f;
+}
+
+.PhoneContainer > a {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #1cb29f;
+}
+
+.FormContainer {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #1cb29f;
+  display: flex;
+  flex-direction: column;
 }

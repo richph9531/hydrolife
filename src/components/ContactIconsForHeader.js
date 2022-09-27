@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from '../styles/PageHeader.module.css';
 
-const ContactIcons = props => {
+const ContactIconsForHeader = props => {
   const IconMap = props.data.data.map((item, pos) => (
-    <div className={classes.ContactIcons} key={pos} >
+    <div className={classes.ContactIconsForHeader} key={pos} >
       <a
         
         href={item.value}
@@ -25,4 +25,4 @@ const ContactIcons = props => {
   );
 };
 
-export default ContactIcons;
+export default ContactIconsForHeader;
