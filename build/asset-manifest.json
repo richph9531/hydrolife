@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hydrolife/static/css/main.a9e05132.css",
+    "main.css": "/hydrolife/static/css/main.e7845fe5.css",
     "main.js": "/hydrolife/static/js/main.ea14d322.js",
     "index.html": "/hydrolife/index.html",
-    "main.a9e05132.css.map": "/hydrolife/static/css/main.a9e05132.css.map",
+    "main.e7845fe5.css.map": "/hydrolife/static/css/main.e7845fe5.css.map",
     "main.ea14d322.js.map": "/hydrolife/static/js/main.ea14d322.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e05132.css",
+    "static/css/main.e7845fe5.css",
     "static/js/main.ea14d322.js"
   ]
 }
