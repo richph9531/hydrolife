@@ -15,25 +15,66 @@ exports[`Page header renders correctly 1`] = `
         />
       </div>
       <div
-        class="PhoneContainer"
+        class="ContactUsContainer"
       >
-        <img
-          alt=""
-          src="/media/phone-call.svg"
-        />
-        <a
-          href="tel:0878203953"
-        >
-          087-820-3953
-        </a>
-      </div>
-      <div
-        class="MenuContainer"
-      >
-        <img
-          alt="Menu"
-          src="/media/menu.png"
-        />
+        <div>
+          <div
+            class="ContactIconsForHeader"
+          >
+            <a
+              href="tel:0878203953"
+              rel="_blank"
+              target="noopener noreferrer"
+            >
+              <img
+                alt="tel:0878203953"
+                src="/media/landline.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="ContactIconsForHeader"
+          >
+            <a
+              href="https://wa.me/27844297382"
+              rel="_blank"
+              target="noopener noreferrer"
+            >
+              <img
+                alt="https://wa.me/27844297382"
+                src="/media/whatsapp.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="ContactIconsForHeader"
+          >
+            <a
+              href="https://www.instagram.com/p/Ciz_zXgqCCn/"
+              rel="_blank"
+              target="noopener noreferrer"
+            >
+              <img
+                alt="https://www.instagram.com/p/Ciz_zXgqCCn/"
+                src="/media/instagram.svg"
+              />
+            </a>
+          </div>
+          <div
+            class="ContactIconsForHeader"
+          >
+            <a
+              href="https://www.facebook.com/profile.php?id=100079179708997"
+              rel="_blank"
+              target="noopener noreferrer"
+            >
+              <img
+                alt="https://www.facebook.com/profile.php?id=100079179708997"
+                src="/media/facebook.svg"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

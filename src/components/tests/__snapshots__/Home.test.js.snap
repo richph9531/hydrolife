@@ -20,15 +20,11 @@ exports[`Home renders correctly 1`] = `
           Our expertise in off-grid solutions and bespoke water filtration systems is what sets Hydrolife apart from other excellent quality water solutions.
         </p>
       </div>
-      <div
-        class="HomeCoolerImageContainer"
-      >
-        <img
-          alt="Rent one of these"
-          class="HomeCoolerImage"
-          src="/media/cooler-tall.png"
-        />
-      </div>
+      <img
+        alt="Rent one of these"
+        class="HomeCoolerImage"
+        src="/media/cooler-transparent.png"
+      />
     </div>
   </div>
 </body>
