@@ -11,32 +11,7 @@
 }
 
 .LogoContainer {
-  width: 55%;
-  display: inline-block;
-}
-
-.PhoneContainer {
-  width: 30%;
-  display: inline-block;
-  color: #1cb29f;
-
-}
-
-.PhoneContainer > img {
-  width: 12%;
-  max-height: 30px;
-  padding-right: 10px;
-}
-
-.PhoneContainer > a {
-  margin-bottom: 100px;
-  font-size: calc(4px + 2vmin);
-  color: #1cb29f;
-  text-align: right;
-}
-
-
-.MenuContainer {
+  width: 53%;
   display: inline-block;
 }
 
@@ -44,6 +19,13 @@
   width: 180px;
 }
 
-.MenuContainer > img {
-  width: 30px;
+.ContactUsContainer {
+  width: 47%;
+  display: inline-block;
+}
+
+.ContactIcons {
+  width: 25px;
+  padding-right: 10px;
+  display: inline-block;
 }

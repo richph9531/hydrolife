@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 
 import PageHeader from './components/PageHeader';
 import Home from './components/Home';
-import ProductsAndServices from './components/ProductsAndServices';
+// import ProductsAndServices from './components/ProductsAndServices';
 import CoolerRentals from './components/CoolerRentals';
-import MeetTheTeam from './components/MeetTheTeam';
+// import MeetTheTeam from './components/MeetTheTeam';
 import ContactUs from './components/ContactUs';
+
+import contactUsData from './data/contactUs.json'
 
 
 class App extends Component {
@@ -14,11 +16,11 @@ class App extends Component {
   render() {
     return (
        <div className='App'>
-        <PageHeader/>
+        <PageHeader data={contactUsData}/>
         <Home/>
         <CoolerRentals/>
-        <ProductsAndServices/>
-        <MeetTheTeam/>
+        {/* <ProductsAndServices/> */}
+        {/* <MeetTheTeam/> */}
         <ContactUs/>
       </div>
     );

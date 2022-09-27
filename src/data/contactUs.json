@@ -1,0 +1,29 @@
+[
+  {
+    "platform": "Landline",
+    "value": "tel:0878203953",
+    "image": "landline.svg",
+    "alt": "0878203953"
+  },
+  {
+    "platform": "Whatsapp",
+    "value": "https://wa.me/27844297382",
+    "image": "whatsapp.svg",
+    "alt": "0844297382"
+  },
+  {
+    "platform": "Instagram",
+    "value": "https://www.instagram.com/p/Ciz_zXgqCCn/",
+    "image": "instagram.svg",
+    "alt": "Instagram"
+  },
+  {
+    "platform": "Facebook",
+    "value": "https://www.facebook.com/profile.php?id=100079179708997",
+    "image": "facebook.svg",
+    "alt": "Facebook"
+  }
+
+
+    
+]
