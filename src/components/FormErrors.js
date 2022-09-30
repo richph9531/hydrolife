@@ -3,12 +3,12 @@ import React from 'react';
 import classes from '../styles/EmailForm.module.css';
 
 
-export const FormErrors = ({formErrors}) =>
+export const FormErrors = ({data}) =>
   <div className={classes.FormErrors}>
-    {Object.keys(formErrors).map((fieldName, i) => {
-      if(formErrors[fieldName].length > 0){
+    {Object.keys(data).map((fieldName, i) => {
+      if(data[fieldName].length > 0){
         return (
-          <p key={i}>{fieldName} {formErrors[fieldName]}</p>
+          <p key={i}>{fieldName} {data[fieldName]}</p>
         )        
       } else {
         return '';

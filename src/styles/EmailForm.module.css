@@ -44,3 +44,9 @@ max-width: 150px;
 font-size: 10px;
 color: #ff0000;
 }
+
+.EmailSendStatus {
+  font-weight: 700;
+  color: #1d76bb;
+  margin-top: 20px;
+  }

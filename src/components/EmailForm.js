@@ -1,6 +1,7 @@
 import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { FormErrors } from './FormErrors';
+import { EmailSendStatus } from './EmailSendStatus';
 
 import { send } from 'emailjs-com';
 
@@ -21,7 +22,9 @@ class EmailForm extends React.Component {
       replyToValid: false,
       messageValid: false,
       recaptchaCompleted: false,
-      formValid: false
+      formValid: false,
+      alreadySubmitted: false,
+      emailSendStatus: null
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -83,13 +86,15 @@ class EmailForm extends React.Component {
       () => { this.validateField(name, value) })
   }
 
-  handleSubmit(event){
+  async handleSubmit(event){
     const { first_name, last_name, message, reply_to } = this.state
+    this.setState({alreadySubmitted: true})
     event.preventDefault()
     const toSend = { first_name, last_name, message, reply_to}
-    send('service_ldx3z6r', 'template_o5p916m', toSend, 'B5Ramafr-SGHyuHIa')
-    .then((response) => {console.log('SUCCESS!', response.status, response.text)})
-    .catch((err) => {console.log('FAILED...', err)});
+    const response = await send('service_ldx3z6r', 'template_o5p916m', toSend, 'B5Ramafr-SGHyuHIa')
+    let emailSendStatus;
+    emailSendStatus = response.status = 200 ? 'Success! Thank you for your message.' : 'Failed to send. Please try again or reach out to us on Whatsapp.';
+    this.setState({emailSendStatus: emailSendStatus})
   }
 
   validateForm() {
@@ -150,9 +155,10 @@ class EmailForm extends React.Component {
       <button
         className={classes.SubmitButton}
         type='submit'
-        disabled={!this.state.formValid}>Submit</button>
+        disabled={!this.state.formValid || this.state.alreadySubmitted}>Submit</button>
     </form>
-    <FormErrors formErrors={this.state.formErrors} />
+    <FormErrors data={this.state.formErrors} />
+    <EmailSendStatus data={this.state.emailSendStatus} />
     </div>
     );
   }
