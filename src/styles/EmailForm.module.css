@@ -33,3 +33,14 @@
   font-weight: 500;
   box-sizing: content-box;
 }
+
+.SubmitButton[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.FormErrors {
+max-width: 150px;
+font-size: 10px;
+color: #ff0000;
+}

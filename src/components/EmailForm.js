@@ -1,5 +1,6 @@
 import React from 'react';
 // import ReCAPTCHA from 'react-google-recaptcha';
+import { FormErrors } from './FormErrors';
 
 import { send } from 'emailjs-com';
 
@@ -14,13 +15,60 @@ class EmailForm extends React.Component {
       last_name: '',
       message: '',
       reply_to: '',
+      formErrors: {first_name: '', last_name: '', reply_to: '', message: '' },
+      firstNameValid: false,
+      lastNameValid: false,
+      replyToValid: false,
+      messageValid: false,
+      formValid: false,
+      recaptchaCompleted: true
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  validateField(fieldName, value) {
+    let fieldValidationErrors = this.state.formErrors;
+    let firstNameValid = this.state.firstNameValid;
+    let lastNameValid = this.state.lastNameValid;
+    let replyToValid = this.state.replyToValid;
+    let messageValid = this.state.messageValid;
+    console.log(value)
+  
+    switch(fieldName) {
+      case 'first_name':
+        firstNameValid = value.replace(/\s/g, '').length >= 1;
+        fieldValidationErrors.first_name = firstNameValid ? '' : ' is invalid';
+        break;
+      case 'last_name':
+        lastNameValid = value.replace(/\s/g, '').length >= 1;
+          fieldValidationErrors.last_name = lastNameValid ? '' : ' is invalid';
+          break;
+      case 'reply_to':
+        replyToValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+        fieldValidationErrors.reply_to = replyToValid ? '' : ' is invalid';
+        break;
+      case 'message':
+        messageValid = value.replace(/\s/g, '').length >= 1;
+          fieldValidationErrors.message = messageValid ? '' : ' is invalid';
+          break;
+      default:
+        break;
+    }
+    this.setState({
+      formErrors: fieldValidationErrors,
+      firstNameValid: firstNameValid,
+      lastNameValid: lastNameValid,
+      replyToValid: replyToValid,
+      messageValid: messageValid
+    }, this.validateForm);
+  }
+
   handleChange(event){
-    this.setState({[event.target.name] : event.target.value})
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({[name]: value}, 
+      () => { this.validateField(name, value) })
   }
 
   handleSubmit(event){
@@ -32,17 +80,27 @@ class EmailForm extends React.Component {
     .catch((err) => {console.log('FAILED...', err)});
   }
 
+
+  
+  validateForm() {
+
+    this.setState({
+      formValid: this.state.firstNameValid && this.state.lastNameValid && this.state.replyToValid && this.state.messageValid
+    });
+  }
+
   render() {
     return (
+      <div>
       <form className={classes.EmailForm} onSubmit={this.handleSubmit}>
       <input
         className={classes.NameFields}
         type='text'
         name='first_name'
         placeholder='First name'
-        value1={this.state.value}
+        value={this.state.value}
         onChange={this.handleChange}
-        required={true}
+        autoComplete='off'
       />
       <input
         className={classes.NameFields}
@@ -51,7 +109,7 @@ class EmailForm extends React.Component {
         placeholder='Last name'
         value={this.state.value}
         onChange={this.handleChange}
-        required={true}
+        autoComplete='off'
       />
       <input
         className={classes.NameFields}
@@ -60,7 +118,7 @@ class EmailForm extends React.Component {
         placeholder='Your email'
         value={this.state.value}
         onChange={this.handleChange}
-        required={true}
+        autoComplete='off'
       />
       <input
         className={classes.MessageField}
@@ -69,7 +127,7 @@ class EmailForm extends React.Component {
         placeholder='Your message'
         value={this.state.value}
         onChange={this.handleChange}
-        required={true}
+        autoComplete='off'
       />
       {/* <ReCAPTCHA
         sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
@@ -77,8 +135,11 @@ class EmailForm extends React.Component {
       /> */}
       <button
         className={classes.SubmitButton}
-        type='submit'>Submit</button>
+        type='submit'
+        disabled={!this.state.formValid}>Submit</button>
     </form>
+    <FormErrors formErrors={this.state.formErrors} />
+    </div>
     );
   }
 }
