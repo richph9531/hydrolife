@@ -21,7 +21,7 @@ class EmailForm extends React.Component {
       lastNameValid: false,
       replyToValid: false,
       messageValid: false,
-      recaptchaCompleted: false,
+      recaptchaCompleted: true,
       formValid: false,
       alreadySubmitted: false,
       emailSendStatus: null
@@ -148,11 +148,11 @@ class EmailForm extends React.Component {
         onChange={this.handleChange}
         autoComplete='off'
       />
-      <ReCAPTCHA
+      {/* <ReCAPTCHA
         sitekey='6LdwJT8iAAAAADpWGr_F2enxP6m1ox2fIy2cXgSr'
         // sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
         onChange={this.handleRECAPTCHA}
-      />
+      /> */}
       <button
         className={classes.SubmitButton}
         type='submit'
