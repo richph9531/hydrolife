@@ -149,7 +149,8 @@ class EmailForm extends React.Component {
         autoComplete='off'
       />
       <ReCAPTCHA
-        sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+        sitekey='6LdwJT8iAAAAADpWGr_F2enxP6m1ox2fIy2cXgSr'
+        // sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
         onChange={this.handleRECAPTCHA}
       />
       <button
