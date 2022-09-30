@@ -16,14 +16,5 @@
     "value": "https://www.instagram.com/p/Ciz_zXgqCCn/",
     "image": "instagram.svg",
     "alt": "Instagram"
-  },
-  {
-    "platform": "Facebook",
-    "value": "https://www.facebook.com/profile.php?id=100079179708997",
-    "image": "facebook.svg",
-    "alt": "Facebook"
   }
-
-
-    
 ]
