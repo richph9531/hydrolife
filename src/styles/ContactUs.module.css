@@ -1,41 +1,49 @@
 .ContactUs {
-  padding: 5% 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: left;
   background-color: #444b58;
   color: #1d76bb;
-  font-size: calc(25px + 2vmin);
-}
-
-.IconsContainer {
-  width: 60vw;
-  display: inline-block;
-  color: #1cb29f;
-}
-
-.Icons {
-  width: 80px;
-  margin-top: 20px;
-  padding-right: 50px;
-  display: inline-block;
 }
 
 .PhoneContainer {
-  color: #1cb29f;
+  color: #e2e0e0;
 }
 
 .PhoneContainer > a {
   margin-top: 20px;
   margin-left: 10px;
-  color: #1cb29f;
+  color: #e2e0e0;
 }
 
 .FormContainer {
   margin-bottom: 50px;
   margin-top: 50px;
-  color: #1cb29f;
+  color: #e2e0e0;
   display: flex;
   flex-direction: column;
+}
+
+.IconsContainer {
+  width: 60vw;
+  display: inline-block;
+  color: #e2e0e0;
+  font-size: calc(6px + 2vmin);
+}
+
+.Icons {
+  width: 50px;
+  margin-top: 20px;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .Icons {
+    width: 25px;
+  }
 }

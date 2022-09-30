@@ -7,8 +7,6 @@ import classes from '../styles/ContactUs.module.css';
 
 
 const ContactUs = (props) => {
-  const contactUsData = props.data[2]
-
   return (
   <div className={classes.ContactUs}>
     <h1>Contact Us</h1>
@@ -22,7 +20,7 @@ const ContactUs = (props) => {
     </div>
     <div className={classes.IconsContainer}>
       Social Media
-      <ContactIconsForContactUs data={contactUsData}/>
+      <ContactIconsForContactUs data={props}/>
     </div>
 </div>
 )

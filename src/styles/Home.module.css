@@ -8,7 +8,6 @@
 }
 
 .HomeContent {
-  box-sizing: border-box;
   width: 42vw;
   background-color: #393f4a;
   font-size: calc(6px + 2vmin);
