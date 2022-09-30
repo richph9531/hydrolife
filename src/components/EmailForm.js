@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReCAPTCHA from 'react-google-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { FormErrors } from './FormErrors';
 
 import { send } from 'emailjs-com';
@@ -20,11 +20,12 @@ class EmailForm extends React.Component {
       lastNameValid: false,
       replyToValid: false,
       messageValid: false,
-      formValid: false,
-      recaptchaCompleted: true
+      recaptchaCompleted: false,
+      formValid: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleRECAPTCHA = this.handleRECAPTCHA.bind(this);
   }
 
   validateField(fieldName, value) {
@@ -33,7 +34,7 @@ class EmailForm extends React.Component {
     let lastNameValid = this.state.lastNameValid;
     let replyToValid = this.state.replyToValid;
     let messageValid = this.state.messageValid;
-    console.log(value)
+    let recaptchaCompleted = this.state.recaptchaCompleted;
   
     switch(fieldName) {
       case 'first_name':
@@ -42,16 +43,19 @@ class EmailForm extends React.Component {
         break;
       case 'last_name':
         lastNameValid = value.replace(/\s/g, '').length >= 1;
-          fieldValidationErrors.last_name = lastNameValid ? '' : ' is invalid';
-          break;
+        fieldValidationErrors.last_name = lastNameValid ? '' : ' is invalid';
+        break;
       case 'reply_to':
         replyToValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
         fieldValidationErrors.reply_to = replyToValid ? '' : ' is invalid';
         break;
       case 'message':
         messageValid = value.replace(/\s/g, '').length >= 1;
-          fieldValidationErrors.message = messageValid ? '' : ' is invalid';
-          break;
+        fieldValidationErrors.message = messageValid ? '' : ' is invalid';
+        break;
+      case 'recaptchaCompleted':
+        recaptchaCompleted = value;
+        break;
       default:
         break;
     }
@@ -60,8 +64,16 @@ class EmailForm extends React.Component {
       firstNameValid: firstNameValid,
       lastNameValid: lastNameValid,
       replyToValid: replyToValid,
-      messageValid: messageValid
+      messageValid: messageValid,
+      recaptchaCompleted: recaptchaCompleted
     }, this.validateForm);
+  }
+
+  async handleRECAPTCHA(event){
+    let recaptchaCompleted;
+    recaptchaCompleted = event.length > 200 ? true : false;
+    this.setState({recaptchaCompleted: recaptchaCompleted}, 
+      () => { this.validateField('recaptchaCompleted', recaptchaCompleted) })
   }
 
   handleChange(event){
@@ -80,12 +92,14 @@ class EmailForm extends React.Component {
     .catch((err) => {console.log('FAILED...', err)});
   }
 
-
-  
   validateForm() {
-
     this.setState({
-      formValid: this.state.firstNameValid && this.state.lastNameValid && this.state.replyToValid && this.state.messageValid
+      formValid:
+        this.state.firstNameValid &&
+        this.state.lastNameValid &&
+        this.state.replyToValid &&
+        this.state.messageValid &&
+        this.state.recaptchaCompleted
     });
   }
 
@@ -129,10 +143,10 @@ class EmailForm extends React.Component {
         onChange={this.handleChange}
         autoComplete='off'
       />
-      {/* <ReCAPTCHA
+      <ReCAPTCHA
         sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
-        onChange={console.log('123')}
-      /> */}
+        onChange={this.handleRECAPTCHA}
+      />
       <button
         className={classes.SubmitButton}
         type='submit'
