@@ -53,7 +53,7 @@ class EmailForm extends React.Component {
         fieldValidationErrors.reply_to = replyToValid ? '' : ' is invalid';
         break;
       case 'message':
-        messageValid = value.replace(/\s/g, '').length >= 1;
+        messageValid = value.replace(/\s/g, '').length >= 1 && value.replace(/\s/g, '').length <= 500;
         fieldValidationErrors.message = messageValid ? '' : ' is invalid';
         break;
       case 'recaptchaCompleted':
@@ -139,7 +139,7 @@ class EmailForm extends React.Component {
         onChange={this.handleChange}
         autoComplete='off'
       />
-      <input
+      <textarea
         className={classes.MessageField}
         type='text'
         name='message'

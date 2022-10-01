@@ -2,7 +2,8 @@
   padding: 5% 5%;
   margin-top: 50px;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   background-color: #393f4a;
 }
